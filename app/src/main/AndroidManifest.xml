@@ -9,8 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:theme="@style/HomeTheme">
+        <activity android:name=".ContentActivity"></activity>
+        <activity android:name=".SectionListActivity"></activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/ProfileTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/FirstTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
