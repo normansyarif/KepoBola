@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class SectionListActivity extends AppCompatActivity {
 
@@ -32,6 +31,7 @@ public class SectionListActivity extends AppCompatActivity {
             "Tendangan sudut"};
 
     ListView listview;
+    Class<?> activity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class SectionListActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Section List");
+        getSupportActionBar().setTitle("Daftar Menu");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -51,11 +51,17 @@ public class SectionListActivity extends AppCompatActivity {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String value = listview.getItemAtPosition(position).toString();
 
                 // Test
-                Intent intent = new Intent(SectionListActivity.this, ContentActivity.class);
-                intent.putExtra("text", value);
+                switch (position){
+                    case 0:
+                        activity = ContentActivity.class;
+                        break;
+                    default:
+                        break;
+                }
+
+                Intent intent = new Intent(SectionListActivity.this, activity);
                 startActivity(intent);
             }
         });

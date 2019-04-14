@@ -1,0 +1,16 @@
+body {
+    padding: 5px;
+    padding-top: 0;
+}
+.title-green {
+    color: #11cf99;
+    padding-top: 2px;
+}
+
+.img {
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}

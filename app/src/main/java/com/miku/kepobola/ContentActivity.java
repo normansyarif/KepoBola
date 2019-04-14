@@ -1,22 +1,46 @@
 package com.miku.kepobola;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
+import android.webkit.WebView;
 
 public class ContentActivity extends AppCompatActivity {
 
-    TextView textView;
+    WebView myBrowser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content);
 
-        textView = findViewById(R.id.textView);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Lapangan Permainan");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        Intent intent = getIntent();
-        textView.setText(intent.getStringExtra("text"));
+        initWebview();
+    }
+
+    private void initWebview() {
+        myBrowser = findViewById(R.id.mybrowser);
+        myBrowser.getSettings().setJavaScriptEnabled(true);
+        myBrowser.getSettings().setBuiltInZoomControls(true);
+        myBrowser.getSettings().setDisplayZoomControls(false);
+        myBrowser.loadUrl("file:///android_asset/lapangan_permainan.html");
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

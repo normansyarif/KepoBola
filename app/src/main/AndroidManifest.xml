@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ContentActivity"></activity>
-        <activity android:name=".SectionListActivity"></activity>
+        <activity android:name=".SectionListActivity" />
         <activity
             android:name=".ProfileActivity"
             android:theme="@style/ProfileTheme" />
