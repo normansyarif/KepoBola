@@ -10,8 +10,8 @@
     <color name="homeColorAccent">#D81B60</color>
 
     // Profile page colors
-    <color name="profileColorPrimary">#49BEFF</color>
-    <color name="profileColorPrimaryDark">#65DCE5</color>
+    <color name="profileColorPrimary">#3e4d5c</color>
+    <color name="profileColorPrimaryDark">#2d2f31</color>
     <color name="profileColorAccent">#0D5D98</color>
     <color name="address">#2F7092</color>
     <color name="followers">#0D5D98</color>
