@@ -13,7 +13,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".WebProfileActivity"
             android:theme="@style/FirstTheme"></activity>
-        <activity android:name=".ContentActivity" />
+        <activity android:name=".ContentActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
         <activity android:name=".SectionListActivity" />
         <activity
             android:name=".ProfileActivity"
