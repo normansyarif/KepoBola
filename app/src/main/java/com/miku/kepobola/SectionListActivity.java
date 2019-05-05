@@ -31,7 +31,8 @@ public class SectionListActivity extends AppCompatActivity {
             "Tendangan sudut"};
 
     ListView listview;
-    Class<?> activity;
+    String fileContent;
+    String titleContent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,16 +53,24 @@ public class SectionListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                // Test
                 switch (position){
                     case 0:
-                        activity = ContentActivity.class;
+                        fileContent = "lapangan_permainan.html";
+                        titleContent = "LAPANGAN PERMAINAN";
+                        break;
+                    case 10:
+                        fileContent = "offside.html";
+                        titleContent = "OFSAID";
                         break;
                     default:
+                        fileContent = "lapangan_permainan.html";
+                        titleContent = "Lapangan Permainan";
                         break;
                 }
 
-                Intent intent = new Intent(SectionListActivity.this, activity);
+                Intent intent = new Intent(SectionListActivity.this, ContentActivity.class);
+                intent.putExtra("fileContent",  fileContent);
+                intent.putExtra("titleContent", titleContent);
                 startActivity(intent);
             }
         });

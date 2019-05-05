@@ -17,7 +17,7 @@ public class ContentActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Lapangan Permainan");
+        getSupportActionBar().setTitle(getIntent().getStringExtra("titleContent"));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
@@ -29,7 +29,7 @@ public class ContentActivity extends AppCompatActivity {
         myBrowser.getSettings().setJavaScriptEnabled(true);
         myBrowser.getSettings().setBuiltInZoomControls(true);
         myBrowser.getSettings().setDisplayZoomControls(false);
-        myBrowser.loadUrl("file:///android_asset/lapangan_permainan.html");
+        myBrowser.loadUrl("file:///android_asset/" + getIntent().getStringExtra("fileContent"));
     }
 
     @Override
