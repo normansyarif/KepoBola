@@ -58,9 +58,69 @@ public class SectionListActivity extends AppCompatActivity {
                         fileContent = "lapangan_permainan.html";
                         titleContent = "LAPANGAN PERMAINAN";
                         break;
+                    case 1:
+                        fileContent = "bola.html";
+                        titleContent = "BOLA";
+                        break;
+                    case 2:
+                        fileContent = "pemain.html";
+                        titleContent = "PEMAIN";
+                        break;
+                    case 3:
+                        fileContent = "perlengkapan_pemain.html";
+                        titleContent = "PERLENGKAPAN PEMAIN";
+                        break;
+                    case 4:
+                        fileContent = "wasit.html";
+                        titleContent = "WASIT";
+                        break;
+                    case 5:
+                        fileContent = "other_official.html";
+                        titleContent = "OFISIAL PERTANDINGAN LAIN";
+                        break;
+                    case 6:
+                        fileContent = "lama_pertandingan.html";
+                        titleContent = "LAMANYA PERTANDINGAN";
+                        break;
+                    case 7:
+                        fileContent = "Mulai_pertandingan.html";
+                        titleContent = "MEMULAI DAN MEMULAI KEMBALI PERMAINAN";
+                        break;
+                    case 8:
+                        fileContent = "bola_luardalam.html";
+                        titleContent = "BOLA DI DALAM DAN DI LUAR LAPANGAN";
+                        break;
+                    case 9:
+                        fileContent = "hasil_pertandingan.html";
+                        titleContent = "MENENTUKAN PEMENANG PERTANDINGAN";
+                        break;
                     case 10:
                         fileContent = "offside.html";
                         titleContent = "OFSAID";
+                        break;
+                    case 11:
+                        fileContent = "pelanggaran.html";
+                        titleContent = "PELANGGARAN DAN KELAKUAN YANG TIDAK SOPAN";
+                        break;
+                    case 12:
+                        fileContent = "tendangan_bebas.html";
+                        titleContent = "TENDANGAN BEBAS";
+                        break;
+                    case 13:
+                        fileContent = "pinalti.html";
+                        titleContent = "TENDANGAN PINALTI";
+                        break;
+                    case 14:
+                        fileContent = "lemparan_dalam.html";
+                        titleContent = "LEMPARAN KEDALAM";
+                        break;
+                    case 15:
+                        fileContent = "tendangan_gawang.html";
+                        titleContent = "TENDANGAN GAWANG";
+                        break;
+                    case 16:
+                        fileContent = "tendangan_sudut.html";
+                        titleContent = "TENDANGAN SUDUT";
                         break;
                     default:
                         fileContent = "lapangan_permainan.html";
