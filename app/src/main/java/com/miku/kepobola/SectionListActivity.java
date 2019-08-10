@@ -28,7 +28,9 @@ public class SectionListActivity extends AppCompatActivity {
             "Tendangan pinalti",
             "Lemparan kedalam",
             "Tendangan gawang",
-            "Tendangan sudut"};
+            "Tendangan sudut",
+            "Amendments",
+            "Perubahan LOTG"};
 
     ListView listview;
     String fileContent;
@@ -121,6 +123,14 @@ public class SectionListActivity extends AppCompatActivity {
                     case 16:
                         fileContent = "tendangan_sudut.html";
                         titleContent = "TENDANGAN SUDUT";
+                        break;
+                    case 17:
+                        fileContent = "amendments.html";
+                        titleContent = "AMENDMENTS";
+                        break;
+                    case 18:
+                        fileContent = "perubahan_lotg.html";
+                        titleContent = "PERUBAHAN LOTG";
                         break;
                     default:
                         fileContent = "lapangan_permainan.html";
