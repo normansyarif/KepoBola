@@ -9,28 +9,30 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class SectionListActivity extends AppCompatActivity {
 
-    String[] listArray={"Lapangan Permainan",
-            "Bola",
-            "Pemain",
-            "Perlengkapan Pemain",
-            "Wasit",
-            "Ofisial Pertandingan Lain",
-            "Lamanya Pertandingan",
-            "Memulai dan memulai kembali permainan",
-            "Bola di dalam dan di luar permainan",
-            "Menentukan pemenang pertandingan",
-            "Ofsaid",
-            "Pelanggaran dan kelakuan yang tidak sopan",
-            "Tendangan bebas",
-            "Tendangan pinalti",
-            "Lemparan kedalam",
-            "Tendangan gawang",
-            "Tendangan sudut",
-            "Amendments",
-            "Perubahan LOTG"};
+    String[] listArray={"1) Lapangan Permainan",
+            "2) Bola",
+            "3) Pemain",
+            "4) Perlengkapan Pemain",
+            "5) Wasit",
+            "6) Ofisial Pertandingan Lain",
+            "7) Lamanya Pertandingan",
+            "8) Memulai dan memulai kembali permainan",
+            "9) Bola di dalam dan di luar permainan",
+            "10) Menentukan pemenang pertandingan",
+            "11) Ofsaid",
+            "12) Pelanggaran & kelakuan tidak sopan",
+            "13) Tendangan bebas",
+            "14) Tendangan pinalti",
+            "15) Lemparan kedalam",
+            "16) Tendangan gawang",
+            "17) Tendangan sudut",
+            "*) Amendments",
+            "*) Perubahan LOTG",
+            "*) Video lainnya"};
 
     ListView listview;
     String fileContent;
@@ -54,6 +56,8 @@ public class SectionListActivity extends AppCompatActivity {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                boolean list = true;
 
                 switch (position){
                     case 0:
@@ -132,16 +136,25 @@ public class SectionListActivity extends AppCompatActivity {
                         fileContent = "perubahan_lotg.html";
                         titleContent = "PERUBAHAN LOTG";
                         break;
+                    case 19:
+                        list = false;
+                        break;
                     default:
                         fileContent = "lapangan_permainan.html";
                         titleContent = "Lapangan Permainan";
                         break;
                 }
 
-                Intent intent = new Intent(SectionListActivity.this, ContentActivity.class);
-                intent.putExtra("fileContent",  fileContent);
-                intent.putExtra("titleContent", titleContent);
-                startActivity(intent);
+                if(list) {
+                    Intent intent = new Intent(SectionListActivity.this, ContentActivity.class);
+                    intent.putExtra("fileContent",  fileContent);
+                    intent.putExtra("titleContent", titleContent);
+                    startActivity(intent);
+                }else{
+                    Intent intent = new Intent(SectionListActivity.this, ActivityVideoList.class);
+                    startActivity(intent);
+                }
+
             }
         });
     }
