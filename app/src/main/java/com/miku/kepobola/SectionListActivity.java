@@ -18,20 +18,20 @@ public class SectionListActivity extends AppCompatActivity {
             "3) Pemain",
             "4) Perlengkapan Pemain",
             "5) Wasit",
-            "6) Ofisial Pertandingan Lain",
+            "6) Official Pertandingan Lain",
             "7) Lamanya Pertandingan",
             "8) Memulai dan memulai kembali permainan",
             "9) Bola di dalam dan di luar permainan",
             "10) Menentukan pemenang pertandingan",
-            "11) Ofsaid",
+            "11) Offside",
             "12) Pelanggaran & kelakuan tidak sopan",
             "13) Tendangan bebas",
             "14) Tendangan pinalti",
             "15) Lemparan kedalam",
             "16) Tendangan gawang",
             "17) Tendangan sudut",
-            "*) Amendments",
-            "*) Perubahan LOTG",
+            "*) Amandemen",
+            "*) Perubahan Peraturan Permainan 2019",
             "*) Video lainnya"};
 
     ListView listview;
@@ -82,7 +82,7 @@ public class SectionListActivity extends AppCompatActivity {
                         break;
                     case 5:
                         fileContent = "other_official.html";
-                        titleContent = "OFISIAL PERTANDINGAN LAIN";
+                        titleContent = "OFFICIAL PERTANDINGAN LAIN";
                         break;
                     case 6:
                         fileContent = "lama_pertandingan.html";
@@ -102,7 +102,7 @@ public class SectionListActivity extends AppCompatActivity {
                         break;
                     case 10:
                         fileContent = "offside.html";
-                        titleContent = "OFSAID";
+                        titleContent = "OFFSIDE";
                         break;
                     case 11:
                         fileContent = "pelanggaran.html";
@@ -130,11 +130,11 @@ public class SectionListActivity extends AppCompatActivity {
                         break;
                     case 17:
                         fileContent = "amendments.html";
-                        titleContent = "AMENDMENTS";
+                        titleContent = "AMANDEMEN";
                         break;
                     case 18:
                         fileContent = "perubahan_lotg.html";
-                        titleContent = "PERUBAHAN LOTG";
+                        titleContent = "PERUBAHAN PERATURAN PERMAINAN 2019";
                         break;
                     case 19:
                         list = false;

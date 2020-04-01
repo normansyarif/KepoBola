@@ -82,11 +82,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Profil\nAuthor"
+                    android:text="Profil\nPenyusun"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="5dp"
                     android:textAlignment="center"
-                    android:textColor="#6f6f6f"
+                    android:textColor="#242f67"
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -129,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:text="Profil\nPembimbing"
-                    android:textColor="#6f6f6f"
+                    android:textColor="#242f67"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="5dp"
                     android:textSize="15sp" />
@@ -180,10 +180,68 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:text="Laws of\nThe Game"
-                    android:textColor="#6f6f6f"
+                    android:text="Peraturan\nPermainan Sepak Bola"
+                    android:textColor="#242f67"
                     android:layout_marginBottom="5dp"
                     android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_pdf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_rowWeight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#FFEA00"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pdf_icon" />
+
+                    <TextView
+                        android:layout_marginTop="13dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Peraturan Permainan (PDF)"
+                        android:textColor="#242f67"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
 
             </LinearLayout>
 

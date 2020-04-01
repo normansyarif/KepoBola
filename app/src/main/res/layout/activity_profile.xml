@@ -157,7 +157,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="K1"
+                        android:text="K2"
                         android:textColor="#000000"
                         android:textSize="18sp" />
 
@@ -215,7 +215,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="Jl. Multatuli, RT.01, No.43\nKel. Mayang Mengurai,\nKec. Kota baru, Kota Jambi"
+                        android:text="Jl. Harapan Tani 2, RT 03, No. 146, Kel. Mayang Mangurai, Kec. Alam Barajo, Kota Jambi"
                         android:textColor="#000000"
                         android:textSize="18sp" />
 
@@ -244,7 +244,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:text="SDN 64/IV KOTA JAMBI\nSMPN 11 KOTA JAMBI\nSMAN 11 KOTA JAMBI\nS1 PORKES UNJA"
+                        android:text="SDN 64/IV KOTA JAMBI\nSMPN 11 KOTA JAMBI\nSMAN 10 KOTA JAMBI\nS1 PORKES UNJA\nStudi S2 Konsentrasi Olahraga UNJA"
                         android:textColor="#000000"
                         android:textSize="18sp" />
 

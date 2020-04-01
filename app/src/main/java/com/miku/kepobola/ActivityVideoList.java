@@ -13,9 +13,9 @@ import android.widget.Toast;
 
 public class ActivityVideoList extends AppCompatActivity {
 
-    String[] listArray={"1) Fouls and Misconduct",
-            "2) Match Management",
-            "3) Match Officials Technique"};
+    String[] listArray={"1) Fouls and Misconduct (Pelanggaran dan Tindakan Menyimpang)",
+            "2) Match Management (Manajemen Pertandingan)",
+            "3) Match Officials Technique (Pertandingan Resmi)"};
 
     ListView listview;
     String fileContent;
@@ -43,15 +43,15 @@ public class ActivityVideoList extends AppCompatActivity {
                 switch (position){
                     case 0:
                         fileContent = "video_fouls.html";
-                        titleContent = "FOULS AND MISCONDUCT";
+                        titleContent = "FOULS AND MISCONDUCT (PELANGGARAN DAN TINDAKAKAN MENYIMPANG)";
                         break;
                     case 1:
                         fileContent = "video_match.html";
-                        titleContent = "MATCH MANAGEMENT";
+                        titleContent = "MATCH MANAGEMENT (MANAJEMEN PERTANDINGAN)";
                         break;
                     case 2:
                         fileContent = "video_official.html";
-                        titleContent = "MATCH OFFICIALS TECHNIQUE";
+                        titleContent = "MATCH OFFICIALS TECHNIQUE (PERTANDINGAN RESMI)";
                         break;
                     default:
                         break;
